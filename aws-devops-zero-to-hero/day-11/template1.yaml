@@ -1,0 +1,11 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: "This is my first CloudFormation template fir EC2 instance creation"
+Resources:
+  MyEC2Instance:
+    Type: "AWS::EC2::Instance"
+    Properties:
+      ImageId: "ami-0c94855ba95c71c99"
+      InstanceType: "t2.micro"
+      KeyName: String
+      SecurityGroupIds:
+        - String 
